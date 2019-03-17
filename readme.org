@@ -1,0 +1,5 @@
+Godot project for dance using Oscfunc
+* usage
+  export and use.
+  The app is listening for osc on port 14000.
+  It is used in our case with [[https://github.com/loopyNid/bno055OscRelay][this repository]] on a pi.
