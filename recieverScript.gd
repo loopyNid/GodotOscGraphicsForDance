@@ -25,17 +25,6 @@ func _ready():
 func _process(delta):
 	while( oscrcv.has_message() ): 	# check if there are pending messages
 		var msg = oscrcv.get_next()	# retrieval of the messages as a dictionary
-		# piNumber = int(msg["address"][3])
-		# print(instancesArr)
-		# if piNumber % 2 == 1:
-		# 	if piNumber in instancesArr:
-		# 		pass
-		# 	else:
-		# 		instancesArr.append(piNumber)
-		# 		var dancerIns = dancer.instance()
-		# 		dancerIns.name = msg["address"]
-		# 		get_node("../Particles").add_child(dancerIns)
-		# using message data
 		var args = msg["args"]
 		if prevArgs == null:
 			prevArgs = args
